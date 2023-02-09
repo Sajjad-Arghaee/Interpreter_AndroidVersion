@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".Activities.RegisterActivity">
+
+    <ImageButton
+        android:id="@+id/signUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded"
+        android:scaleType="fitXY"
+        android:src="@drawable/signup"
+        android:onClick="signUP"
+        app:layout_constraintBottom_toBottomOf="@+id/btnbuttom"
+        app:layout_constraintLeft_toLeftOf="@+id/btnleft"
+        app:layout_constraintRight_toLeftOf="@+id/btnright"
+        app:layout_constraintTop_toTopOf="@+id/btntop" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded"
+        android:hint="@string/username"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#7E000000"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/userbuttom"
+        app:layout_constraintLeft_toLeftOf="@+id/userleft"
+        app:layout_constraintRight_toLeftOf="@+id/userright"
+        app:layout_constraintTop_toTopOf="@+id/usertop" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded"
+        android:hint="@string/password"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#7E000000"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/passbuttom"
+        app:layout_constraintLeft_toLeftOf="@+id/userleft"
+        app:layout_constraintRight_toLeftOf="@+id/userright"
+        app:layout_constraintTop_toTopOf="@+id/passtop" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded"
+        android:hint="@string/email"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#7E000000"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/emailbuttom"
+        app:layout_constraintLeft_toLeftOf="@+id/userleft"
+        app:layout_constraintRight_toLeftOf="@+id/userright"
+        app:layout_constraintTop_toTopOf="@+id/emailtop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:textColor="#03196A"
+        app:layout_constraintLeft_toLeftOf="@+id/userleft"
+        app:layout_constraintRight_toLeftOf="@+id/userright"
+        android:text="@string/registered"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.443" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btntop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnbuttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.615" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/usertop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userbuttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passtop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passbuttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/emailtop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/emailbuttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

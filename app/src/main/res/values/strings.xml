@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Interpreter</string>
+    <string name="type_here">type here…</string>
+    <string name="title_activity_question3">QuestionActivity3</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name_txt">name.txt</string>
+    <string name="title_activity_online">OnlineActivity</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="registered">registered before</string>
+    <string name="email">email</string>
+    <string name="chat">chat</string>
+</resources>
